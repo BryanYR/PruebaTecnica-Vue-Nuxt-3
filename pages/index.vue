@@ -8,8 +8,9 @@ const shows = computed(() => data.value?.data || [])
 <template>
   <div class="container w-full h-full">
     <Loading v-if="pending" />
+    <h1>Lista de Eventos</h1>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6"
     >
       <CardEvent
         v-for="(show, index) in shows"

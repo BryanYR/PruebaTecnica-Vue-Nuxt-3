@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Show>(), {
   }
 </script>
 <template>
-  <div @click="toRedirect(props.id)" class="max-w-md rounded-2xl overflow-hidden shadow-lg bg-white transition hover:shadow-2xl cursor-pointer">
+  <div @click="toRedirect(props.id)" class="max-w-md rounded-2xl overflow-hidden shadow-lg bg-white transition ease-in-out duration-300 hover:shadow-2xl cursor-pointer">
     <img
       v-if="props.image?.medium"
       :src="props.image.medium"
